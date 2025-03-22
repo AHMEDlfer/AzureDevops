@@ -7,7 +7,7 @@ stages:
     - job: DeployToAKS
       displayName: 'Deploy to AKS'
       pool:
-        vmImage: 'ubuntu-latest'
+        name: 'Default'
       steps:
         - checkout: self
           displayName: 'Checkout repository files'
